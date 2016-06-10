@@ -1,0 +1,12 @@
+= simple_form_for(@car_rent) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :date_from
+    = f.input :date_to
+    = f.input :price
+    = f.association :customer
+    = f.association :car
+
+  .form-actions
+    = f.button :submit

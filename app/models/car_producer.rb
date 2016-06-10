@@ -1,0 +1,2 @@
+class CarProducer < ApplicationRecord
+end

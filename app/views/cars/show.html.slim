@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Car model:
+  = "#{@car.car_model.car_manufacturer.name} #{@car.car_model.name}"
+p
+  strong Plate:
+  = @car.plate
+p
+  strong Price:
+  = @car.price
+
+= link_to 'Edit', edit_car_path(@car)
+'|
+= link_to 'Back', cars_path

@@ -1,0 +1,21 @@
+p#notice = notice
+
+p
+  strong Date from:
+  = @car_rent.date_from
+p
+  strong Date to:
+  = @car_rent.date_to
+p
+  strong Price:
+  = @car_rent.price
+p
+  strong Customer:
+  = @car_rent.customer
+p
+  strong Car:
+  = @car_rent.car
+
+= link_to 'Edit', edit_car_rent_path(@car_rent)
+'|
+= link_to 'Back', car_rents_path

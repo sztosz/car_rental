@@ -1,0 +1,29 @@
+h1 Listing car_rents
+
+table
+  thead
+    tr
+      th Date from
+      th Date to
+      th Price
+      th Customer
+      th Car
+      th
+      th
+      th
+
+  tbody
+    - @car_rents.each do |car_rent|
+      tr
+        td = car_rent.date_from
+        td = car_rent.date_to
+        td = car_rent.price
+        td = car_rent.customer
+        td = car_rent.car
+        td = link_to 'Show', car_rent
+        td = link_to 'Edit', edit_car_rent_path(car_rent)
+        td = link_to 'Destroy', car_rent, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Car rent', new_car_rent_path

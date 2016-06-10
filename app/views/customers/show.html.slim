@@ -1,0 +1,27 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @customer.name
+p
+  strong Surname:
+  = @customer.surname
+p
+  strong Pesel:
+  = @customer.pesel
+p
+  strong Licence:
+  = @customer.licence
+p
+  strong Street:
+  = @customer.street
+p
+  strong City:
+  = @customer.city
+p
+  strong Zip:
+  = @customer.zip
+
+= link_to 'Edit', edit_customer_path(@customer)
+'|
+= link_to 'Back', customers_path
